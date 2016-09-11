@@ -57,5 +57,5 @@ app.post( '/calc/mul', function( req, res ) {
 } );
 
 app.listen(app.get('port'), function() {
-    console.log('listening on 3000');
+    console.log('server is listening');
 });
