@@ -6,9 +6,11 @@ var numx;
 var numy;
 var oldop;
 
+// Possible inputs
 var actions = [ "sum", "sub", "mul", "div" ];
 var numbs = ["1","2","3","4","5","6","7","8","9","0","."];
 
+// A console logging helper function
 var logit = function( message ) {
 	console.log( message );
 	console.log( "op:", op );
@@ -17,6 +19,7 @@ var logit = function( message ) {
 	console.log( "display:", display );
 };
 
+// The 'brains' of the calculator's button logic
 var calc = function( btn ) {
 
 	var input = $("#display-input");
@@ -71,6 +74,7 @@ var calc = function( btn ) {
 
 
 $( document ).ready( function() {
+	// Whenever a button is clicked, collect its data-value and send it along to the brains
 	$("button").on("click", function() {
 
 		var btn = $( this ).data("value");
@@ -78,6 +82,9 @@ $( document ).ready( function() {
 		calc( String( btn ) );
 
 	});
+
+	// If you hover over the solar cell too long, the calc will reset
+	// Skeuomorphism at its best
 	$(".solar-cell").hover(function() {
 		var input = $( ".container-input > input" );
 		input.stop().clearQueue();
@@ -91,6 +98,7 @@ $( document ).ready( function() {
 	});
 });
 
+// AJAX Handler
 var test = function( action, thex, they ) {
 	logit("Before ajax");
 	$.ajax({
