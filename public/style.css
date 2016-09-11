@@ -1,0 +1,72 @@
+body {
+	max-width: 15em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+}
+
+.btn-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.btn-row div {
+	flex-basis: 25%;
+}
+
+button {
+	background-color: none;
+	width: 60px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	max-width: 25%;
+}
+
+.container-input {
+	background-color: #FFF;
+	margin-bottom: .75em;
+}
+
+.container-input input {
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 2em;
+	text-align: right;
+	padding-right: .25em;
+	padding-left: .25em;
+}
+
+.calc-body {
+	background-color: #FAFAFA;
+	padding: 2em;
+	border: 1px solid #666;
+}
+
+.calc-head {
+	line-height: 25px;
+	vertical-align: center;
+	padding: 0 0 .75em 0;
+}
+
+.calc-head > span {
+	font-family: 'Monoton', cursive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 23px;
+}
+
+.solar-cell {
+	display: flex;
+	float: right;
+	flex-flow: row nowrap;
+}
+
+.cell {
+	height: 25px;
+	width: 15px;
+	background-color: #333;
+	border-left: 1px solid #FAFAFA;
+}

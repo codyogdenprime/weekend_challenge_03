@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Server Calculator</title>
+		<script src="jquery.min.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="calc-body">
+			<div class="calc-container">
+				<div class="calc-head">
+					<span>CodyO</span>
+					<div class="solar-cell">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+				</div>
+				<div class="container-input">
+					<div class="running-total"></div>
+					<input id="display-input" value="0" disabled type="text" />
+				</div>
+				<div class="btn-row">
+					<div>&nbsp;</div>
+					<button data-value="AC" class="all-clear">A/C</button>
+					<button data-value="ON">ON</button>
+					<button data-value="OFF">OFF</button>
+				</div>
+				<div class="btn-row">
+					<button data-value="7">7</button>
+					<button data-value="8">8</button>
+					<button data-value="9">9</button>
+					<button data-value="div">÷</button>
+				</div>
+				<div class="btn-row">
+					<button data-value="4">4</button>
+					<button data-value="5">5</button>
+					<button data-value="6">6</button>
+					<button data-value="mul">x</button>
+				</div>
+				<div class="btn-row">
+					<button data-value="1">1</button>
+					<button data-value="2">2</button>
+					<button data-value="3">3</button>
+					<button data-value="sub">-</button>
+				</div>
+				<div class="btn-row">
+					<button data-value=".">.</button>
+					<button data-value="0">0</button>
+					<button data-value="=">=</button>
+					<button data-value="sum">+</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
